@@ -11,6 +11,33 @@
     <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+     <script>
+        async function getQnAResponse(userQuery) {
+            const qnaEndpoint = 'https://langres111.cognitiveservices.azure.com/';
+            const qnaKey = '4122d5b2fa7d4d5390a97d77f712e0f2';
+            
+            const response = await fetch(`${qnaEndpoint}/knowledgebases/YOUR_KB_ID/generateAnswer`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `EndpointKey ${qnaKey}`,
+                },
+                body: JSON.stringify({
+                    question: userQuery,
+                }),
+            });
+            
+            const result = await response.json();
+            return result.answers[0].answer;
+        }
+
+        async function handleUserInput() {
+            const userInput = /* Get user input from your UI */;
+            const qnaResponse = await getQnAResponse(userInput);
+            
+            // Display qnaResponse in your UI
+        }
+    </script>
    
 </head>
 
