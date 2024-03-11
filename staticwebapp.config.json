@@ -1,0 +1,6 @@
+{
+    "environment": {
+      "COMPUTER_VISION_KEY": "<68ff86f4cdd64d639b65139f9fe0d7d2>",
+      "COMPUTER_VISION_ENDPOINT": "<https://vision1122.cognitiveservices.azure.com/>"
+    }
+  }
