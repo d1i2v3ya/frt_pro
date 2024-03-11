@@ -38,6 +38,27 @@
             // Display qnaResponse in your UI
         }
     </script>
+   <script src="staticwebapp.functions.js">
+    </script>
+    <script>
+        const analyzeButton = document.getElementById("analyzeButton");
+        const imageUpload = document.getElementById("imageUpload");
+        const analysisResult = document.getElementById("analysisResult");
+        
+        analyzeButton.addEventListener("click", async () => {
+          const imageFile = imageUpload.files[0];
+        
+          if (!imageFile) {
+            alert("Please select an image to analyze!");
+            return;
+          }
+        
+          const response = await analyzeImage(imageFile); // Call the 'analyzeImage' function provided by the extension
+        
+          // Process and display the analysis results here
+          analysisResult.textContent = JSON.stringify(response.data, null, 2);
+        });
+        </script>
    
 </head>
 
@@ -123,10 +144,15 @@
                             <a href="#url" class="btn btn-style btn-primary">Read More</a>
                         </div>
                         <div>
-                        <iframe src="https://webchat.botframework.com/embed/healthbot111-ehvwgnm?s=ka4w80mfvdE.4VtGmSRI6LGE2yEPRsxGtGMYS4aIC1M3ZnB2foZWl9k" style='minwidth:600px;width-right:50%; minheight:500px;'>chatbot
-                            
+                        <iframe src="https://webchat.botframework.com/embed/healthbot111-ehvwgnm?s=ka4w80mfvdE.4VtGmSRI6LGE2yEPRsxGtGMYS4aIC1M3ZnB2foZWl9k" style='minwidth:600px;width-right:50%; minheight:500px;'>chatbot    
                         </iframe>
-                            
+                            <div>
+                                <input type="file" id="imageUpload" accept="image/*">
+                        <button id="analyzeButton">Analyze Image</button>
+                        
+                        <div id="analysisResult"></div>
+                            </div>
+                                
                        
                     </div>
                     </div>
