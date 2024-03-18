@@ -25,4 +25,17 @@ Key Features and Functionalities:
 Key features include Health Bot  integration for a instant and accurate user queries , Azure App Service for hosting, Azure Storage for data management, and a simple backend for user sessions. The solution involves a chatbot hosted on Azure with providing instant responses and automating support processes. The purpose is to streamline interactions, reduce support workload, and improve overall user experience.
 
 ScreenShots:
+Home:![Screenshot (385)](https://github.com/d1i2v3ya/frt_pro/assets/107289868/1b371e69-6434-4f2b-9bf7-0d90af46b177)
 
+About:![Screenshot (386)](https://github.com/d1i2v3ya/frt_pro/assets/107289868/cb05db9f-694c-4b83-a457-1f7e1d3a3122)
+
+Services:![Screenshot (387)](https://github.com/d1i2v3ya/frt_pro/assets/107289868/07e60641-6a45-4ca1-831b-8e5d6f4e9e2e)
+
+healthBot:![Screenshot (384)](https://github.com/d1i2v3ya/frt_pro/assets/107289868/147b4cea-f8bf-4e47-b0b6-2822fdcf25d0)
+
+TECH STACKS:
+--Azure(Hosting)
+--HTML
+--CSS
+--JAVASCRIPT
+--BOOTSTRAP
