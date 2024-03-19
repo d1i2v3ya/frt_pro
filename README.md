@@ -6,7 +6,7 @@ This is a web based application developed for health related based Website.
 This Web based health application has been has been seveloped for the accomplishment of FUTURE READY TALENT Internship Program launched by Microsoft,Future Skills Prime, Github, Foundit.
 
 Project Link - https://brave-water-032525200.5.azurestaticapps.net
-project demo Video Link - https://youtu.be/rOjcUOyTUww
+project demo Video Link - https://www.youtube.com/watch?v=rOjcUOyTUww
 
 Azure Technologies Used for project :
 Azure serives: Azure App Service,Azure Static Webapps.
